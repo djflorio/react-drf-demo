@@ -16,4 +16,4 @@ class PaintingSerializer(serializers.ModelSerializer):
         model = Painting
         fields = (
           'id', 'name', 'artist', 'description',
-          'retail_price', 'image', 'source')
+          'retail_price', 'price', 'image', 'source')

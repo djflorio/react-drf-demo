@@ -7,6 +7,9 @@ class Artist(models.Model):
     image = models.CharField(max_length=150)
     source = models.CharField(max_length=150, blank=True, default='')
 
+    def __str__(self):
+        return self.name
+
 class Painting(models.Model):
     name = models.CharField(max_length=150)
     artist = models.ForeignKey(Artist, related_name='paintings', on_delete=models.CASCADE)
