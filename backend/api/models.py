@@ -4,6 +4,7 @@ from django.db import models
 class Artist(models.Model):
     name = models.CharField(max_length=100)
     biography = models.TextField()
+    image = models.CharField(max_length=150)
     source = models.CharField(max_length=150, blank=True, default='')
 
 class Painting(models.Model):
