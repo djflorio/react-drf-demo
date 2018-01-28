@@ -8,7 +8,7 @@ class ArtistSerializer(serializers.ModelSerializer):
   
     class Meta:
         model = Artist
-        fields = ('id', 'name', 'paintings', 'biography', 'source')
+        fields = ('id', 'name', 'paintings', 'biography', 'image', 'source')
         
 class PaintingSerializer(serializers.ModelSerializer):
 
